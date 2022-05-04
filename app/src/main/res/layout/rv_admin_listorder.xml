@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+
+    android:padding="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewlist"
+        android:layout_width="345dp"
+        android:layout_height="95dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="7dp"
+        app:contentPadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="361dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnCancel_adminorder"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/maroon"
+                android:elevation="2dp"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/btnConfirm_adminorder"
+                app:layout_constraintTop_toBottomOf="@+id/tvadminstatus"
+                app:strokeColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/tvadmindateOrder"
+                android:layout_width="179dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fredokaone_regular"
+                android:text="ordername"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvpriceadminorder"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/fredokaone_regular"
+                android:text="price"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnCancel_adminorder"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvadmindateOrder"
+                app:layout_constraintVertical_bias="0.312" />
+
+            <TextView
+                android:id="@+id/tvadminstatus"
+                android:layout_width="146dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="185dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="19dp"
+                android:fontFamily="@font/fredokaone_regular"
+                android:text="status"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnConfirm_adminorder"
+                android:layout_width="85dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/green"
+                android:elevation="2dp"
+                android:text="Success"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp"
+                app:layout_constraintStart_toEndOf="@+id/tvpriceadminorder"
+                app:layout_constraintTop_toBottomOf="@+id/tvadmindateOrder"
+                app:strokeColor="#000000" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

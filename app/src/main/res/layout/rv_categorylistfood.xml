@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewlist"
+        android:layout_width="389dp"
+        android:layout_height="114dp"
+       android:layout_margin="8dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="7dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="366dp"
+            android:layout_height="94dp">
+
+            <ImageView
+                android:id="@+id/imgEdit"
+                style="@style/imgFood"
+                android:layout_width="99dp"
+                android:layout_height="81dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+
+                android:id="@+id/tvadmindateOrder"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="11dp"
+                android:fontFamily="@font/fredokaone_regular"
+                android:text="Foodname"
+                android:textAlignment="1"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvpriceadminorder"
+                app:layout_constraintStart_toEndOf="@+id/imgEdit"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvpriceadminorder"
+                android:layout_width="124dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="@font/fredokaone_regular"
+                android:gravity="left"
+                android:text="price"
+                android:textAlignment="1"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnCart"
+                app:layout_constraintStart_toEndOf="@+id/imgEdit"
+                app:layout_constraintTop_toBottomOf="@+id/tvadmindateOrder" />
+
+            <Button
+                android:id="@+id/btnCart"
+                android:layout_width="96dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="7dp"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.707"
+                app:layout_constraintStart_toStartOf="@+id/tvpriceadminorder"
+                app:layout_constraintTop_toBottomOf="@+id/tvadmindateOrder"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

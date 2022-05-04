@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_proflie">
+
+    <fragment
+        android:id="@+id/nav_proflie"
+        android:name="th.ac.kmutnb.myprojectapp.ui.home.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="th.ac.kmutnb.myprojectapp.ui.cart.CartFragment"
+        android:label="cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="th.ac.kmutnb.myprojectapp.ui.order.OrderFragment"
+        android:label="notification"
+        tools:layout="@layout/fragment_order" />
+</navigation>
